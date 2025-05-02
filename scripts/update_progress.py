@@ -18,10 +18,10 @@ def update_readme(percentage):
     readme = Path("README.md")
     content = readme.read_text()
     
-    # Update progress bar
+    # Corrected regex pattern (fixed quotes and spacing)
     new_content = re.sub(
-        r'!\[Progress\]\(https://progress-bar\.dev/\d+.*\)',
-        f'![Progress](https://progress-bar.dev/{percentage}/?title=Overall%20Completion)',
+        r'<img src="https://progress-bar\.dev/\d+.*" width="100%"/>',
+        f'<img src="https://progress-bar.dev/{percentage}/?title=Overall%20Completion" width="100%"/>',
         content
     )
     
