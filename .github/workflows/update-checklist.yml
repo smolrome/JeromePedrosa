@@ -1,0 +1,34 @@
+name: Update Progress Checklist
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs every Sunday at midnight
+  workflow_dispatch: # Allows manual runs
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Count completed items
+        id: progress
+        run: |
+          COMPLETED=$(grep -c '[X]' PROGRESS.md || true)
+          TOTAL=$(grep -c '\- [' PROGRESS.md || true)
+          PERCENTAGE=$(( $COMPLETED * 100 / $TOTAL ))
+          echo "completed=$COMPLETED" >> $GITHUB_OUTPUT
+          echo "total=$TOTAL" >> $GITHUB_OUTPUT
+          echo "percentage=$PERCENTAGE" >> $GITHUB_OUTPUT
+          
+      - name: Update README
+        run: |
+          sed -i "s/![Progress](.*)/![Progress](https:\/\/progress-bar.dev\/${{ steps.progress.outputs.percentage }}\/?title=Overall%20Completion)/" README.md
+          sed -i "s/**Last Updated:**.*/**Last Updated:** $(date +'%Y-%m-%d')/" README.md
+          
+      - name: Commit changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add README.md
+          git commit -m "Automated progress update: ${{ steps.progress.outputs.percentage }}%"
+          git push
