@@ -18,17 +18,17 @@ jobs:
       
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: "3.10"
       
       - name: Run updater
         run: |
-          pip install regex
           python scripts/update_progress.py
+          cat README.md | grep "progress-bar.dev" # Debug output
       
       - name: Commit changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add README.md
-          git diff --cached --quiet || git commit -m "Update progress"
+          git diff --cached --quiet || git commit -m "Auto-update progress"
           git push
