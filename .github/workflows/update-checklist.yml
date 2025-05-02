@@ -1,30 +1,31 @@
-name: Progress Updater
+name: Update Progress
 on:
   push:
     paths:
-      - 'PROGRESS.md'  # Triggers when this file changes
-  workflow_dispatch:   # Allows manual runs
+      - 'PROGRESS.md'
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Required for pushing changes
+      contents: write
     
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Needed for git history
+          fetch-depth: 0
       
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: '3.10'
       
-      - name: Run update script
-        run: python scripts/update_progress.py
+      - name: Run updater
+        run: |
+          pip install regex
+          python scripts/update_progress.py
       
-      - name: Commit and push changes
+      - name: Commit changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
