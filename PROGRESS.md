@@ -45,6 +45,6 @@
 ---
 
 ### 📊 Progress Tracking
-![Progress](https://progress-bar.dev/0/?title=Overall%20Completion)
+<img src="https://progress-bar.dev/0/?title=Overall%20Completion" width="100%"/>
 
 **Last Updated:** {{date}}
