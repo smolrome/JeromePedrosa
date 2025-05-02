@@ -1,7 +1,7 @@
 # 🚀 Python & Cybersecurity Mastery Checklist
 
 ## Phase 1: Python Fundamentals + Security Basics
-- [x] **Password Strength Checker** (Python)
+- [ ] **Password Strength Checker** (Python)
 - [ ] **Caesar Cipher Tool** (Encryption/Decryption)
 - [ ] **Basic Port Scanner** (Socket Programming)
 - [ ] **Data Sanitizer** (Input Validation)
