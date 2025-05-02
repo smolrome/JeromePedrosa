@@ -2,7 +2,7 @@
 
 ## Phase 1: Python Fundamentals + Security Basics
 - [x] **Password Strength Checker** (Python)
-- [ ] **Caesar Cipher Tool** (Encryption/Decryption)
+- [x] **Caesar Cipher Tool** (Encryption/Decryption)
 - [ ] **Basic Port Scanner** (Socket Programming)
 - [ ] **Data Sanitizer** (Input Validation)
 - [ ] **Log Analyzer** (Failed Login Detection)
