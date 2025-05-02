@@ -1,7 +1,7 @@
 # 🚀 Python & Cybersecurity Mastery Checklist
 
 ## Phase 1: Python Fundamentals + Security Basics
-- [ ] **Password Strength Checker** (Python)
+- [x] **Password Strength Checker** (Python)
 - [ ] **Caesar Cipher Tool** (Encryption/Decryption)
 - [ ] **Basic Port Scanner** (Socket Programming)
 - [ ] **Data Sanitizer** (Input Validation)
@@ -48,8 +48,3 @@
 ![Progress](https://progress-bar.dev/0/?title=Overall%20Completion)
 
 **Last Updated:** {{date}}
-
-# Example script to update progress percentage
-total_items = 30
-completed = 5  # Count your [X] marks
-percentage = (completed/total_items)*100
