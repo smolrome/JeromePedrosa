@@ -1,50 +1,58 @@
-# 👋 Hi there, I'm Jerome!
+# 🐍 Python Mastery Roadmap
 
-🎓 Fresh graduate passionate about building efficient, secure, and user-friendly software.  
-💼 Currently developing desktop apps, time-tracking systems, and cybersecurity tools.  
-🛡️ Aspiring cybersecurity expert — learning Python deeply and exploring ethical hacking.
+Welcome to my **Python Mastery Journey** — a structured, documented path from beginner to expert in Python programming and cybersecurity 🧠🔐
 
----
+## 📌 Purpose
 
-## 🚀 Projects
+This repository tracks my progress as I build real-world projects, master core Python concepts, and dive into advanced topics like:
 
-### 🔒 [Password Manager App](https://github.com/yourusername/password-manager)
-A secure, encrypted password manager with brute-force protection and PIN verification.  
-**Tech:** Python, Tkinter, SQLite/MySQL, Flask (for IP management dashboard)
-
-### ⏱️ [Daily Time Record (DTR) System](https://github.com/yourusername/dtr-system)
-Desktop application for student interns to log work hours, with database integration and late-time rules.  
-**Tech:** Python, Tkinter, SQLite/MySQL, XAMPP
-
----
-
-## 🛠️ Skills & Tools
-
-- **Languages:** Python, PHP, JavaScript, SQL
-- **Frameworks & Tools:** Laravel, Flask, Tailwind CSS, Bootstrap, Tkinter
-- **Databases:** MySQL, SQLite, Firebase
-- **Other Tools:** Git, GitHub, XAMPP, VS Code, Canva, Figma
+- Data structures and algorithms
+- Object-oriented programming
+- File handling and automation
+- Web development (Flask/Django)
+- APIs and scraping
+- GUI apps (Tkinter, PyQt)
+- Cybersecurity tools and encryption
+- Scripting and automation
+- Testing, performance, and deployment
 
 ---
 
-## 📈 Currently Working On
+## 🗺️ Files & Structure
 
-- Mastering Python for automation and cybersecurity
-- Building a multi-feature time tracking and attendance desktop system
-- Studying for the Civil Service Exam
+| File | Description |
+|------|-------------|
+| `python-mastery-roadmap.md` | My complete learning roadmap, broken down by skill level and topic |
+| `PROGRESS.md` | My weekly/monthly progress tracking sheet |
+| `scripts/` | Actual Python scripts and projects I’m working on |
+| `.github/workflows/update-checklist.yml` | Auto-updates progress status via GitHub Actions |
 
 ---
 
-## 📫 Let's Connect
+## 🔁 Motto
 
-- 📧 Email: jeromepedrosa3@gmail.com
-  
+> **"Discipline over motivation. Consistency over intensity. 🔒📆"**
+
 ---
 
-## 📊 Progress Tracking  
-<!-- Progress bar (will be auto-updated by script) -->
-<img src="https://progress-bar.dev/0/?title=Overall%20Completion" width="100%"/>
+## 🧠 Why This Repo?
 
-**Last Updated:** 2025-05-02 23:47
+- ✅ To stay consistent and accountable
+- ✅ To build a strong Python foundation
+- ✅ To grow publicly and help others on the same path
 
-_“Code with purpose, design with clarity, and secure everything.”_
+---
+
+## 📬 Contact
+
+Follow my journey or reach out:
+
+- GitHub: [@smolrome](https://github.com/smolrome)
+- Email: jeromepedrosa3@gmail.com
+
+---
+
+## 📝 License
+
+This repository is open for learning and collaboration under the [MIT License](LICENSE).
+
