@@ -54,5 +54,5 @@ Follow my journey or reach out:
 
 ## 📝 License
 
-This repository is open for learning and collaboration under the [MIT License](https://github.com/smolrome/DailyTimeRecord/blob/main/LICENSE).
+This repository is open for learning and collaboration under the [MIT License](https://github.com/smolrome/JeromePedrosa/blob/main/LICENSE).
 
