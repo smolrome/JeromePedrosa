@@ -48,7 +48,7 @@ This repository tracks my progress as I build real-world projects, master core P
 Follow my journey or reach out:
 
 - GitHub: [@smolrome](https://github.com/smolrome)
-- Email: jeromepedrosa3@gmail.com
+- Email: pedrosa.jerome4@gmail.com
 
 ---
 
